@@ -1,0 +1,8 @@
+
+.vs/
+*.user
+*.suo
+/paket.exe
+obj/
+bin/
+project.lock.json
