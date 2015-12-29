@@ -36,7 +36,6 @@
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="JavaScript Runtime Samples\JSRT Universal Windows Apps Hosting Samples\C#\JsRT_UWP_Sample\ChakraHost.cs" />
     <Compile Include="JavaScript Runtime Samples\JSRT Universal Windows Apps Hosting Samples\C#\JsRT_UWP_Sample\Hosting\JavaScriptEnum.cs" />
     <Compile Include="JavaScript Runtime Samples\JSRT Universal Windows Apps Hosting Samples\C#\JsRT_UWP_Sample\Hosting\JavaScriptTypedef.cs" />
     <Compile Include="JavaScript Runtime Samples\JSRT Universal Windows Apps Hosting Samples\C#\JsRT_UWP_Sample\Hosting\Native.cs" />
