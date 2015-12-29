@@ -1,4 +1,4 @@
-﻿namespace ChakraHost.Hosting
+﻿namespace Taser.Chakra
 {
     /// <summary>
     ///     The JavaScript type of a JavaScriptValue.

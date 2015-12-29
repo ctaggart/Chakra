@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ChakraHost.Hosting
+namespace Taser.Chakra
 {
     using System.Runtime.InteropServices;
 

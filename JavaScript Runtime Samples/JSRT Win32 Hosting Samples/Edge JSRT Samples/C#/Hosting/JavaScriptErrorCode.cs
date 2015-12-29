@@ -1,4 +1,4 @@
-﻿namespace ChakraHost.Hosting
+﻿namespace Taser.Chakra
 {
     using System.Diagnostics.CodeAnalysis;
 

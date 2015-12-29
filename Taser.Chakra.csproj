@@ -33,12 +33,32 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="JavaScript Runtime Samples\JSRT Universal Windows Apps Hosting Samples\C#\JsRT_UWP_Sample\Hosting\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="JavaScript Runtime Samples\JSRT Universal Windows Apps Hosting Samples\C#\JsRT_UWP_Sample\Hosting\JavaScriptEnum.cs" />
-    <Compile Include="JavaScript Runtime Samples\JSRT Universal Windows Apps Hosting Samples\C#\JsRT_UWP_Sample\Hosting\JavaScriptTypedef.cs" />
-    <Compile Include="JavaScript Runtime Samples\JSRT Universal Windows Apps Hosting Samples\C#\JsRT_UWP_Sample\Hosting\Native.cs" />
+    <Compile Include="JavaScript Runtime Samples\JSRT Win32 Hosting Samples\Edge JSRT Samples\C#\Hosting\JavaScriptBackgroundWorkItemCallback.cs" />
+    <Compile Include="JavaScript Runtime Samples\JSRT Win32 Hosting Samples\Edge JSRT Samples\C#\Hosting\JavaScriptBeforeCollectCallback.cs" />
+    <Compile Include="JavaScript Runtime Samples\JSRT Win32 Hosting Samples\Edge JSRT Samples\C#\Hosting\JavaScriptContext.cs" />
+    <Compile Include="JavaScript Runtime Samples\JSRT Win32 Hosting Samples\Edge JSRT Samples\C#\Hosting\JavaScriptEngineException.cs" />
+    <Compile Include="JavaScript Runtime Samples\JSRT Win32 Hosting Samples\Edge JSRT Samples\C#\Hosting\JavaScriptErrorCode.cs" />
+    <Compile Include="JavaScript Runtime Samples\JSRT Win32 Hosting Samples\Edge JSRT Samples\C#\Hosting\JavaScriptException.cs" />
+    <Compile Include="JavaScript Runtime Samples\JSRT Win32 Hosting Samples\Edge JSRT Samples\C#\Hosting\JavaScriptFatalException.cs" />
+    <Compile Include="JavaScript Runtime Samples\JSRT Win32 Hosting Samples\Edge JSRT Samples\C#\Hosting\JavaScriptMemoryAllocationCallback.cs" />
+    <Compile Include="JavaScript Runtime Samples\JSRT Win32 Hosting Samples\Edge JSRT Samples\C#\Hosting\JavaScriptMemoryEventType.cs" />
+    <Compile Include="JavaScript Runtime Samples\JSRT Win32 Hosting Samples\Edge JSRT Samples\C#\Hosting\JavaScriptNativeFunction.cs" />
+    <Compile Include="JavaScript Runtime Samples\JSRT Win32 Hosting Samples\Edge JSRT Samples\C#\Hosting\JavaScriptObjectFinalizeCallback.cs" />
+    <Compile Include="JavaScript Runtime Samples\JSRT Win32 Hosting Samples\Edge JSRT Samples\C#\Hosting\JavaScriptPropertyId.cs" />
+    <Compile Include="JavaScript Runtime Samples\JSRT Win32 Hosting Samples\Edge JSRT Samples\C#\Hosting\JavaScriptRuntime.cs" />
+    <Compile Include="JavaScript Runtime Samples\JSRT Win32 Hosting Samples\Edge JSRT Samples\C#\Hosting\JavaScriptRuntimeAttributes.cs" />
+    <Compile Include="JavaScript Runtime Samples\JSRT Win32 Hosting Samples\Edge JSRT Samples\C#\Hosting\JavaScriptRuntimeVersion.cs" />
+    <Compile Include="JavaScript Runtime Samples\JSRT Win32 Hosting Samples\Edge JSRT Samples\C#\Hosting\JavaScriptScriptException.cs" />
+    <Compile Include="JavaScript Runtime Samples\JSRT Win32 Hosting Samples\Edge JSRT Samples\C#\Hosting\JavaScriptSourceContext.cs" />
+    <Compile Include="JavaScript Runtime Samples\JSRT Win32 Hosting Samples\Edge JSRT Samples\C#\Hosting\JavaScriptThreadServiceCallback.cs" />
+    <Compile Include="JavaScript Runtime Samples\JSRT Win32 Hosting Samples\Edge JSRT Samples\C#\Hosting\JavaScriptUsageException.cs" />
+    <Compile Include="JavaScript Runtime Samples\JSRT Win32 Hosting Samples\Edge JSRT Samples\C#\Hosting\JavaScriptValue.cs" />
+    <Compile Include="JavaScript Runtime Samples\JSRT Win32 Hosting Samples\Edge JSRT Samples\C#\Hosting\JavaScriptValueType.cs" />
+    <Compile Include="JavaScript Runtime Samples\JSRT Win32 Hosting Samples\Edge JSRT Samples\C#\Hosting\Native.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
