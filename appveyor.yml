@@ -1,0 +1,12 @@
+os: Visual Studio 2015
+version: '{build}'
+clone_depth: 10
+init:
+- git config --global core.autocrlf input
+build_script:
+- ps: |
+    .\build.ps1
+    if ($lastexitcode -ne 0){ exit $lastexitcode }
+artifacts:
+- path: bin\*.nupkg
+test: off

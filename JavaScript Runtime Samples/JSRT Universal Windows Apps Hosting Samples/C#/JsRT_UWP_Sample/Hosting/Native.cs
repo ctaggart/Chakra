@@ -96,10 +96,10 @@
         public static extern JavaScriptErrorCode JsGetFalseValue(out JavaScriptValue falseValue);
 
         [DllImport("chakra.dll")]
-        public static extern JavaScriptErrorCode JsBoolToBoolean(bool value, out JavaScriptValue booleanValue);
+        public static extern JavaScriptErrorCode JsBoolToBoolean([MarshalAs(UnmanagedType.U1)] bool value, out JavaScriptValue booleanValue);
 
         [DllImport("chakra.dll")]
-        public static extern JavaScriptErrorCode JsBooleanToBool(JavaScriptValue booleanValue, out bool boolValue);
+        public static extern JavaScriptErrorCode JsBooleanToBool(JavaScriptValue booleanValue, [MarshalAs(UnmanagedType.U1)] out bool boolValue);
 
         [DllImport("chakra.dll")]
         public static extern JavaScriptErrorCode JsConvertValueToBoolean(JavaScriptValue value, out JavaScriptValue booleanValue);
@@ -156,7 +156,7 @@
         public static extern JavaScriptErrorCode JsSetPrototype(JavaScriptValue obj, JavaScriptValue prototypeObject);
 
         [DllImport("chakra.dll")]
-        public static extern JavaScriptErrorCode JsGetExtensionAllowed(JavaScriptValue obj, out bool value);
+        public static extern JavaScriptErrorCode JsGetExtensionAllowed(JavaScriptValue obj, [MarshalAs(UnmanagedType.U1)] out bool value);
 
         [DllImport("chakra.dll")]
         public static extern JavaScriptErrorCode JsPreventExtension(JavaScriptValue obj);
@@ -171,19 +171,19 @@
         public static extern JavaScriptErrorCode JsGetOwnPropertyNames(JavaScriptValue obj, out JavaScriptValue propertyNames);
 
         [DllImport("chakra.dll")]
-        public static extern JavaScriptErrorCode JsSetProperty(JavaScriptValue obj, JavaScriptPropertyId propertyId, JavaScriptValue value, bool useStrictRules);
+        public static extern JavaScriptErrorCode JsSetProperty(JavaScriptValue obj, JavaScriptPropertyId propertyId, JavaScriptValue value, [MarshalAs(UnmanagedType.U1)] bool useStrictRules);
 
         [DllImport("chakra.dll")]
-        public static extern JavaScriptErrorCode JsHasProperty(JavaScriptValue obj, JavaScriptPropertyId propertyId, out bool hasProperty);
+        public static extern JavaScriptErrorCode JsHasProperty(JavaScriptValue obj, JavaScriptPropertyId propertyId, [MarshalAs(UnmanagedType.U1)] out bool hasProperty);
 
         [DllImport("chakra.dll")]
-        public static extern JavaScriptErrorCode JsDeleteProperty(JavaScriptValue obj, JavaScriptPropertyId propertyId, bool useStrictRules, out JavaScriptValue result);
+        public static extern JavaScriptErrorCode JsDeleteProperty(JavaScriptValue obj, JavaScriptPropertyId propertyId, [MarshalAs(UnmanagedType.U1)] bool useStrictRules, out JavaScriptValue result);
 
         [DllImport("chakra.dll")]
-        public static extern JavaScriptErrorCode JsDefineProperty(JavaScriptValue obj, JavaScriptPropertyId propertyId, JavaScriptValue propertyDescriptor, out bool result);
+        public static extern JavaScriptErrorCode JsDefineProperty(JavaScriptValue obj, JavaScriptPropertyId propertyId, JavaScriptValue propertyDescriptor, [MarshalAs(UnmanagedType.U1)] out bool result);
 
         [DllImport("chakra.dll")]
-        public static extern JavaScriptErrorCode JsHasIndexedProperty(JavaScriptValue obj, JavaScriptValue index, out bool result);
+        public static extern JavaScriptErrorCode JsHasIndexedProperty(JavaScriptValue obj, JavaScriptValue index, [MarshalAs(UnmanagedType.U1)] out bool result);
 
         [DllImport("chakra.dll")]
         public static extern JavaScriptErrorCode JsGetIndexedProperty(JavaScriptValue obj, JavaScriptValue index, out JavaScriptValue result);
@@ -195,13 +195,13 @@
         public static extern JavaScriptErrorCode JsDeleteIndexedProperty(JavaScriptValue obj, JavaScriptValue index);
 
         [DllImport("chakra.dll")]
-        public static extern JavaScriptErrorCode JsEquals(JavaScriptValue obj1, JavaScriptValue obj2, out bool result);
+        public static extern JavaScriptErrorCode JsEquals(JavaScriptValue obj1, JavaScriptValue obj2, [MarshalAs(UnmanagedType.U1)] out bool result);
 
         [DllImport("chakra.dll")]
-        public static extern JavaScriptErrorCode JsStrictEquals(JavaScriptValue obj1, JavaScriptValue obj2, out bool result);
+        public static extern JavaScriptErrorCode JsStrictEquals(JavaScriptValue obj1, JavaScriptValue obj2, [MarshalAs(UnmanagedType.U1)] out bool result);
 
         [DllImport("chakra.dll")]
-        public static extern JavaScriptErrorCode JsHasExternalData(JavaScriptValue obj, out bool value);
+        public static extern JavaScriptErrorCode JsHasExternalData(JavaScriptValue obj, [MarshalAs(UnmanagedType.U1)] out bool value);
 
         [DllImport("chakra.dll")]
         public static extern JavaScriptErrorCode JsGetExternalData(JavaScriptValue obj, out IntPtr externalData);
@@ -213,10 +213,10 @@
         public static extern JavaScriptErrorCode JsCreateArray(uint length, out JavaScriptValue result);
 
         [DllImport("chakra.dll")]
-        public static extern JavaScriptErrorCode JsCallFunction(JavaScriptValue function, JavaScriptValue[] arguments, ushort argumentCount, out JavaScriptValue result);
+        public static extern JavaScriptErrorCode JsCallFunction(JavaScriptValue function, [MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 2)] JavaScriptValue[] arguments, ushort argumentCount, out JavaScriptValue result);
 
         [DllImport("chakra.dll")]
-        public static extern JavaScriptErrorCode JsConstructObject(JavaScriptValue function, JavaScriptValue[] arguments, ushort argumentCount, out JavaScriptValue result);
+        public static extern JavaScriptErrorCode JsConstructObject(JavaScriptValue function, [MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 2)] JavaScriptValue[] arguments, ushort argumentCount, out JavaScriptValue result);
 
         [DllImport("chakra.dll")]
         public static extern JavaScriptErrorCode JsCreateFunction(JavaScriptNativeFunction nativeFunction, IntPtr externalData, out JavaScriptValue function);
